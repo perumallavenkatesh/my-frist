@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Hello, I'm <span>venkatesh</span></h1>
+        <p>A Passionate Web Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a motivated and creative web developer with a strong interest 
+        in designing beautiful and functional web pages. I love coding and 
+        learning new technologies.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-box">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A website built using HTML, CSS.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>JavaScript based mini-app for daily use.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Responsive portfolio website.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: perumallavenkey224@gmail.com</p>
+    <p>Phone: ‪+91 8096571387‬</p>
+</section>
+
+<footer>
+    <p>© 2025 perumalla venkatesh | All Rights Reserved</p>
+</footer>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #111;
+    color: #fff;
+}
+
+/* Navbar */
+header {
+    width: 100%;
+    background: #000;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #00eaff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+}
+
+.hero-text span {
+    color: #00eaff;
+}
+
+.hero-text p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00eaff;
+    color: #111;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* About */
+.about, .skills, .projects, .contact {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.about p {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+/* Skills */
+.skill-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skill {
+    background: #222;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Projects */
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #222;
+    padding: 20px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    background: #00eaff;
+    color: #111;
+}
+
+/* Contact */
+.contact p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .about p {
+        width: 100%;
+    }
+}
+
+</style>
+
+</body>
+</html>
+
